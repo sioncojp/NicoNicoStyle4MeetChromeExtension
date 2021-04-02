@@ -1,14 +1,14 @@
 .comment {
   position: absolute;
-  color: #fff;
-  text-shadow: 2px 2px #558ABB;
+  color: #FF5B79;
+  text-shadow: 0px 0px #558ABB;
   white-space: nowrap;
   line-height: initial;
   z-index: 2147483647;
 }
 .comment.color-red {
-  color: #e60f4f;
-  text-shadow: 2px 2px #fff;
+  color: #FF5B79;
+  text-shadow: 0px 0px #fff;
 }
 .comment.color-blue {
   color: #1d4dc8;

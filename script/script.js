@@ -1,6 +1,6 @@
 // NOTE: elements
 let prevThread;
-let isActive = localStorage.getItem('mns-active') === 'true'
+let isActive = 'true'
 
 let observer = new MutationObserver( (records) => {
   try {
@@ -142,9 +142,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 chrome.runtime.onMessage.addListener(function(request) {
   const keys = Object.keys(request)
-  if (keys.includes('active')) {
-    setActivateState(request.active)
-  }
   if (keys.includes('color')) {
     setColorTag(request.color)
   }
